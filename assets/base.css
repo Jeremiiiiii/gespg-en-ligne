@@ -1,0 +1,29 @@
+/* Hauteur fixe + pas de scroll global */
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"],
+.block-container {
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+
+/* Dialogs scrollables */
+[role="dialog"] {
+  max-height: 90vh;
+  overflow-y: auto !important;
+}
+
+/* Nettoyage marges/paddings bas */
+.block-container { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+/* Autoriser le scroll dans les formulaires et selects */
+form[role="form"], div[data-baseweb="select"] {
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+}
+
+/* iframes Streamlit fantômes */
+iframe[title="st.iframe"] {
+  height: 0 !important; min-height: 0 !important; max-height: 0 !important;
+  display: block !important;
+}
+

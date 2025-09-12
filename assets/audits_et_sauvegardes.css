@@ -1,0 +1,12 @@
+.card {border:1px solid #ececec; border-radius:14px; background:#fff; padding:12px; margin-bottom:10px;}
+.pill {display:inline-block; min-width:110px; text-align:center; font-weight:700; font-size:.8rem; padding:4px 10px; border-radius:999px; vertical-align:middle;}
+.pill.update {background:#e8f1ff; color:#1d4ed8; border:1px solid #bfdbfe;}
+.pill.create {background:#eaffea; color:#047857; border:1px solid #a7f3d0;}
+.pill.delete {background:#ffecec; color:#b91c1c; border:1px solid #fecaca;}
+.pill.rowupd {background:#fff5e6; color:#b45309; border:1px solid #fcd34d;}
+.badge {background:#f3f4f6; border:1px solid #e5e7eb; padding:2px 8px; border-radius:999px; font-size:.80rem; color:#374151;}
+.meta {color:#6b7280; font-size:.85rem;}
+.code {background:#f9fafb; border:1px dashed #e5e7eb; padding:3px 6px; border-radius:6px;}
+.diffitem {border:1px dashed #e5e7eb; border-radius:10px; padding:6px 8px; margin-bottom:8px; background:#fafafa;}
+.arrow {opacity:.6; padding:0 4px;}
+.childline {padding:6px 10px; border:1px solid #eef2f7; border-radius:10px; background:#fbfdff; margin-bottom:6px;}

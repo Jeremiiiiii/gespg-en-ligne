@@ -1,0 +1,14 @@
+/* Compactage des espaces */
+.stMarkdown[data-testid="stMarkdown"] > div:empty {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+.stElementContainer {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+div.block-container {
+  padding-top: 1rem !important;
+}
+
