@@ -105,7 +105,7 @@ def dialog_edit_supplier(row: dict):
 
         c1, c2,c3,c4 = st.columns(4)
         with c2:
-            submitted = st.form_submit_button("Enregistrer les modifications",use_container_width=True)
+            submitted = st.form_submit_button("Enregistrer",use_container_width=True)
         with c3:
             cancel = st.form_submit_button("Fermer",use_container_width=True)
 
