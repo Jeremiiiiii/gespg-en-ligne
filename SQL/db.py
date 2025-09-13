@@ -9,7 +9,7 @@ def _base_connect(db_path: str) -> sqlite3.Connection:
         db_path,
         timeout=30,           # évite les 'database is locked' trop rapides
         isolation_level=None, # autocommit OFF -> géré par 'with conn:' (transactions explicites)
-        check_same_thread=True  # PLUS SÛR : une connexion par thread
+        check_same_thread=False 
     )
     conn.row_factory = sqlite3.Row
     # PRAGMA cohérents partout
