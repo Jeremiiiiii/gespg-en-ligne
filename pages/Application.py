@@ -145,6 +145,9 @@ if "df_data2" not in st.session_state:
 if "modal_open" not in st.session_state:
     st.session_state.modal_open = False
 
+if "maj_log_seen" not in st.session_state:
+    st.session_state["maj_log_seen"] = set()
+    
 # Chargement complet (df_full et df2_full) pour la logique "ArbreParenté"
 df_full = st.session_state.df_data.copy()
 df2_full = st.session_state.df_data2.copy()
@@ -345,6 +348,9 @@ with tab_desc:
 
                         if st.session_state.get("show_create_fp"):
                             creation_fiche_produit_dialog(choix_source)  
+                    # --- Bouton création fiche produit  ---
+                    if st.button("🧩 Création fiche produit", use_container_width=True, key="btn_create_fp"):
+                        creation_fiche_produit_dialog(choix_source)
 
                     # --- Bouton supprimer sous "Création fiche produit" ---
                     if st.button("🗑️ Supprimer la sélection", use_container_width=True, key="btn_delete_rows"):
